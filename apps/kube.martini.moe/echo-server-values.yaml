@@ -18,4 +18,3 @@ spec:
       tls:
         - hosts:
             - echo.kube.martini.moe
-          secretName: echo-server-tls
