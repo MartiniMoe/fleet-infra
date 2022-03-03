@@ -10,7 +10,7 @@ spec:
       chart: echo-server
       sourceRef:
         kind: HelmRepository
-        name: eleann
+        name: ealenn
         namespace: flux-system
   interval: 5m
   install:
