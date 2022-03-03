@@ -1,0 +1,21 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: echo-server
+  namespace: echo-server
+spec:
+  values:
+    ingress:
+      enabled: true
+      hosts:
+        - host: echo.kube.martini.moe
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
+      annotations:
+        traefik.ingress.kubernetes.io/router.tls: "true"
+        traefik.ingress.kubernetes.io/router.tls.certresolver: le
+      tls:
+        - hosts:
+            - echo.kube.martini.moe
+          secretName: echo-server-tls
