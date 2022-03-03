@@ -11,8 +11,7 @@ spec:
       hosts:
         - host: echo.kube.martini.moe
           paths:
-            - path: /
-              pathType: Prefix
+            - /
       annotations:
         traefik.ingress.kubernetes.io/router.tls: "true"
         traefik.ingress.kubernetes.io/router.tls.certresolver: le
