@@ -5,6 +5,7 @@ metadata:
   namespace: echo-server
 spec:
   values:
+    application.enable.http: true
     ingress:
       enabled: true
       hosts:
