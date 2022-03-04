@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: github-token
+  namespace: flux-system
+stringData:
+  token: <token>
+# convert using
+# kubeseal --format=yaml --cert=/home/moe/git/github/fleet-infra/clusters/kube.martini.moe/pub-sealed-secrets.pem --controller-namespace flux-system -n flux-system < example-token.yaml > example-token-sealed.yaml
