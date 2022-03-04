@@ -8,4 +8,6 @@ resources:
   - github-token-sealed.yaml
   - github-provider.yaml
   - github-alert.yaml
+  - webhook-ingress.yaml
   - webhook-receiver.yaml
+  - webhook-token-sealed.yaml
