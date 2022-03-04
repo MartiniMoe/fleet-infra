@@ -5,3 +5,6 @@ resources:
   - telegram-token-sealed.yaml
   - telegram-provider.yaml
   - telegram-alert.yaml
+  - github-token-sealed.yaml
+  - github-provider.yaml
+  - github-alert.yaml
