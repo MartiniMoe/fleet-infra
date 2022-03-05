@@ -12,3 +12,6 @@ spec:
       levelSeed: moekube
       serviceType: NodePort
       nodePort: 30824
+    persistence:
+      dataDir:
+        enabled: true
