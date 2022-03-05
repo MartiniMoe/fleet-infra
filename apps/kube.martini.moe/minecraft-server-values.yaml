@@ -8,4 +8,6 @@ spec:
     minecraftServer:
       eula: "TRUE"
       motd: "Welcome to Minecraft on moekube!"
-#      serviceType: LoadBalancer
+      forcegameMode: true
+      levelSeed: moekube
+      serviceType: NodePort
