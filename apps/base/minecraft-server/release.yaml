@@ -7,7 +7,7 @@ spec:
   releaseName: minecraft-server
   chart:
     spec:
-      chart: itzg/minecraft
+      chart: minecraft
       sourceRef:
         kind: HelmRepository
         name: minecraft-server
