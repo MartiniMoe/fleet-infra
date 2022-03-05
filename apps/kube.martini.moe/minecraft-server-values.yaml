@@ -11,3 +11,4 @@ spec:
       forcegameMode: true
       levelSeed: moekube
       serviceType: NodePort
+      nodePort: 25565
