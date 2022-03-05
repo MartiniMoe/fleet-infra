@@ -1,0 +1,10 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: minecraft-server
+  namespace: minecraft-server
+spec:
+  values:
+    minecraftServer:
+      eula: "TRUE"
+      motd: "Welcome to Minecraft on moekube!"

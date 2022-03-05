@@ -4,3 +4,4 @@ namespace: flux-system
 resources:
   - ealenn.yaml
   - sealed-secrets.yaml
+  - minecraft-server.yaml
