@@ -4,7 +4,7 @@ resources:
   - ../base/echo-server
   - ../base/minecraft-server
   - ../base/skooner
-#  - skooner-ingress.yaml
+  - skooner-ingress.yaml
 patchesStrategicMerge:
 #  - echo-server-values.yaml
   - minecraft-server-values.yaml
