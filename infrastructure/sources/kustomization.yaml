@@ -5,3 +5,4 @@ resources:
   - ealenn.yaml
   - sealed-secrets.yaml
   - minecraft-server.yaml
+  - grafana.yaml
