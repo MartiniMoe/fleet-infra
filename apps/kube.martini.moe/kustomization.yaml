@@ -3,6 +3,7 @@ kind: Kustomization
 resources:
 #  - ../base/echo-server
   - ../base/minecraft-server
+  - ../base/grafana
 #  - ../base/skooner
 #  - skooner-ingress.yaml
 patchesStrategicMerge:
