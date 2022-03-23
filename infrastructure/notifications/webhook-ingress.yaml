@@ -4,12 +4,12 @@ metadata:
   name: webhook-ingress
   namespace: flux-system
   annotations:
-    traefik.ingress.kubernetes.io/router.tls: "true"
-    traefik.ingress.kubernetes.io/router.tls.certresolver: le
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   tls:
     - hosts:
         - flux-webhook.kube.martini.moe
+      secretName: webhook-cert
   rules:
   - host: flux-webhook.kube.martini.moe
     http:
