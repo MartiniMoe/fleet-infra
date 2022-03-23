@@ -5,6 +5,7 @@ resources:
   - ../base/minecraft-server
   - ../base/grafana
   - ../base/skooner
+  - ../base/workadventure
   - skooner-ingress.yaml
 patchesStrategicMerge:
 #  - echo-server-values.yaml

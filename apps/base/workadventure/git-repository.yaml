@@ -1,0 +1,11 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: workadventure
+  namespace: workadventure
+spec:
+  interval: 5m0s
+  url: https://github.com/ffddorf/workadventure-k8s
+  ref:
+    branch: main
