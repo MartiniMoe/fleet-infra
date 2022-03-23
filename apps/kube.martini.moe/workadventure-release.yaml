@@ -11,3 +11,5 @@ spec:
     name: workadventure
   prune: true
   targetNamespace: workadventure
+  patchesStrategicMerge:
+    - workadventure-ingress-patch.yaml
