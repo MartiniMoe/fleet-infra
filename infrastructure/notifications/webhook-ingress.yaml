@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - flux-webhook.kube.martini.moe
+        - flux.kube.martini.moe
       secretName: webhook-cert
   rules:
-  - host: flux-webhook.kube.martini.moe
+  - host: flux.kube.martini.moe
     http:
       paths:
       - pathType: Prefix
