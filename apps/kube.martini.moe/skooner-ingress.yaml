@@ -4,12 +4,12 @@ metadata:
   name: skooner
   namespace: kube-system
   annotations:
-    traefik.ingress.kubernetes.io/router.tls: "true"
-    traefik.ingress.kubernetes.io/router.tls.certresolver: le
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   tls:
     - hosts:
         - skooner.kube.martini.moe
+      secretName: skooner-cert
   rules:
   - host: skooner.kube.martini.moe
     http:
