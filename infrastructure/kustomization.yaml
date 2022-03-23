@@ -4,3 +4,4 @@ resources:
   - sources
   - sealed-secrets
   - notifications
+  - cert-manager
