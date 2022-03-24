@@ -7,7 +7,7 @@ resources:
   - ../base/skooner
   - ../base/workadventure
   - skooner-ingress.yaml
-  - workadventure-release.yaml
+#  - workadventure-release.yaml
 patchesStrategicMerge:
 #  - echo-server-values.yaml
   - minecraft-server-values.yaml
