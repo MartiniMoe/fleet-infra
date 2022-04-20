@@ -1,0 +1,31 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress
+  namespace: workadventure
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+spec:
+  tls:
+    - hosts:
+       - workadventure.kube.martini.moe
+      secretName: workadventure-cert
+  rules:
+    - host: workadventure.kube.martini.moe
+      http:
+        paths:
+          - path: "/pusher"
+            backend:
+              service:
+                name: pusher
+                port:
+                  name: http
+            pathType: Prefix
+          - path: "/"
+            backend:
+              service:
+                name: front
+                port:
+                  name: http
+            pathType: Prefix
