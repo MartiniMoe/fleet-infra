@@ -10,4 +10,5 @@ resources:
 #  - workadventure-release.yaml
 patchesStrategicMerge:
 #  - echo-server-values.yaml
+  - workadventure-ingress-patch.yaml
   - minecraft-server-values.yaml
