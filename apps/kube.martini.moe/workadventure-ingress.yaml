@@ -16,7 +16,7 @@ metadata:
   namespace: workadventure
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt
-    traefik.ingress.kubernetes.io/router.middlewares: stripprefix-pusher@kubernetescrd
+    traefik.ingress.kubernetes.io/router.middlewares: workadventure-stripprefix-pusher@kubernetescrd
 spec:
   tls:
     - hosts:
