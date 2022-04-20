@@ -6,6 +6,6 @@ metadata:
   namespace: workadventure
 spec:
   interval: 5m0s
-  url: https://github.com/ffddorf/workadventure-k8s
+  url: https://github.com/MartiniMoe/workadventure-k8s.git
   ref:
     branch: main
