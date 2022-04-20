@@ -5,3 +5,4 @@ namespace: workadventure
 resources:
   - namespace.yaml
   - git-repository.yaml
+  - app.yaml
