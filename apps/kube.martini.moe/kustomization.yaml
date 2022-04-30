@@ -4,10 +4,10 @@ resources:
 #  - ../base/echo-server
   - ../base/minecraft-server
   - ../base/grafana
-  - ../base/skooner
+#  - ../base/skooner
   - ../base/workadventure
   - workadventure-ingress.yaml
-  - skooner-ingress.yaml
+#  - skooner-ingress.yaml
 #  - workadventure-release.yaml
 patchesStrategicMerge:
 #  - echo-server-values.yaml
